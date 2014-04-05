@@ -2,6 +2,7 @@
 
 function search_function($search){
 	include '../variables/secrets.php';
+	//generates MySQL connection
 	$mysqli = new mysqli($host, $username, $password, $db_name);
 	if ($mysqli->connect_error) {
 		die('Connect Error (' . $mysqli->connect_errno . ') '. $mysqli->connect_error);
@@ -14,6 +15,7 @@ function search_function($search){
 	$b=0;
 	$c=0;
 
+	//TODO: make this function a little less rigid. right now it is hard coded to 50 results and cant handle multiple pages
 	if ($result = $mysqli->query( $query)) {	
 		while($a <= 49){   
 			// select the entry
