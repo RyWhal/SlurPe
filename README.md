@@ -3,10 +3,33 @@ SlurPe
 
 A simple URL shortener PHP webapp with a MySQL backend. The website is currently hosted at http://slur.pe.
 
-the flow right now goes something like this
+
+
+
+CLI Slur.pe
+===========
+
+A simple curl with the fields "url_full" and "url_short" pointed at "slur.pe/api/put.php" will submit your link for shortening.
+```
+rwhalen-mbp:~ rwhalen$  curl -F "url_full=https://github.com/RyWhal" -F "url_short=github" slur.pe/api/put.php
+Your Short URL: http://slur.pe/github
+Copy the link above into a URL bar to go to https://github.com/RyWhal
+rwhalen-mbp:~ rwhalen$
+```
+
+If you leave off "url_short" a random shortened URL will be generated for you.
+```
+rwhalen-mbp:~ rwhalen$  curl -F "url_full=https://github.com/RyWhal" slur.pe/api/put.php
+Your Short URL: http://slur.pe/PkbffV
+Copy the link above into a URL bar to go to https://github.com/RyWhal
+rwhalen-mbp:~ rwhalen$
+```
+
 
 URL shortening:
 ===============
+
+How the shortening works...
 
 1) A full URL and short URL come into index.php
 
@@ -28,20 +51,9 @@ URL shortening:
         
 >d) wooo its been shortened!
 
-Browse:
-=======
 
->To Add...
-
-
-Search:
-=======
-
->To Add...
-        
-
-Notes:
-=====
+Config
+======
 
 Each function that makes a MySQL connection looks for its MySQL connection variables in variables/secrets.php. It will be of the following format...
 
