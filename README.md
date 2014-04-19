@@ -40,7 +40,7 @@ Search:
 >To Add...
         
 
-Note:
+Notes:
 =====
 
 Each function that makes a MySQL connection looks for its MySQL connection variables in variables/secrets.php. It will be of the following format...
@@ -53,4 +53,26 @@ $password = "mysqlpassword";
 $db_name = "slurpe";
 $table = "urls";
 ?>
+```
+
+
+This is what my mysql table looks like, currently:
+```
+mysql> show create table urls\G
+*************************** 1. row ***************************
+       Table: urls
+Create Table: CREATE TABLE `urls` (
+  `ID` bigint(10) NOT NULL AUTO_INCREMENT,
+  `url_full` text,
+  `url_short` varchar(128) DEFAULT NULL,
+  `datetime` datetime DEFAULT NULL,
+  `ip_put` int(10) unsigned DEFAULT NULL,
+  `clicks` int(6) DEFAULT '0',
+  `score` int(6) DEFAULT NULL,
+  `active` tinyint(1) DEFAULT NULL,
+  `public` tinyint(1) DEFAULT NULL,
+  `random` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `url_short` (`url_short`)
+)
 ```

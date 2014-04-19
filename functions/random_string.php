@@ -1,5 +1,5 @@
 <?php
-// stolen from http://paste.tbee-clan.de/r/whLB5
+// code is from http://paste.tbee-clan.de/r/whLB5
 function rand_str( $len, $rep )
 {
 	// The alphabet the random string consists of
