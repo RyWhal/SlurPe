@@ -82,7 +82,6 @@ Create Table: CREATE TABLE `urls` (
   `clicks` int(6) DEFAULT '0',
   `score` int(6) DEFAULT NULL,
   `active` tinyint(1) DEFAULT NULL,
-  `public` tinyint(1) DEFAULT NULL,
   `random` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `url_short` (`url_short`)
