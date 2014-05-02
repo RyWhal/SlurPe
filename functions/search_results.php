@@ -1,4 +1,6 @@
 <?php
+// THIS FUNCTION HAS BEEN DEPRECATED
+// it makes things too complex
 
 function search_function($search){
 	include '../variables/secrets.php';

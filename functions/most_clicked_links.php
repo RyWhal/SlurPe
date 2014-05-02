@@ -1,4 +1,7 @@
 <?php
+// THIS FUNCTION HAS BEEN DEPRECATED
+// it makes things too complex
+
 
 //this function selects the URLs from the DB that are clicked the most
 //this probably isnt scaleable. This will probably suck if the DB gets large

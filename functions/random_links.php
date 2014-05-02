@@ -1,4 +1,6 @@
 <?php
+// THIS FUNCTION HAS BEEN DEPRECATED
+// it makes things too complex
 
 function random_links(){
 	include '../variables/secrets.php';

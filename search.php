@@ -1,3 +1,5 @@
+<!--This page has been deprecated, it makes things too complicated -->
+
 <!DOCTYPE html PUBLIC "-//W2C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -7,12 +9,12 @@
 
 	<link href="dist/css/bootstrap.css" rel ="stylesheet">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">	
-	
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
 	<style>
 		.col-lg-8{margin-left:15%;margin-right:15%;}
 		.input-group-addon{font-size:16px;}
-		.search_terms{font-size:10; margin-left:16%;}		
+		.search_terms{font-size:10; margin-left:16%;}
 	</style>
 
 </head>
@@ -44,7 +46,7 @@
 	</div>
 
 	<div class="jumbotron" style="margin-top:55px;">
-		
+
 		<h2 style="margin-left:16%;margin-right:15%;" id="foo">Its search time:</h2>
 		<div class="form_input">
 			<form name="input" action="/browse/results.php" class="urls" method="post">
@@ -63,7 +65,7 @@
 
 
 
-<div class="slurpe_footer"> 
+<div class="slurpe_footer">
 	<div class="footer_content">Created by Ryan Whalen - 2013</div>
 	<img src="/images/slurpe.png" height="125" width="125" class="slurpe_logo">
 </div><!--slurpe_logo--!>
