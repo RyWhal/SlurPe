@@ -7,11 +7,11 @@
 
 		<link href="dist/css/bootstrap.css" rel ="stylesheet">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">	
-		<script src="js/text_rep.js"> </script>	
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<script src="js/text_rep.js"> </script>
 		<style>
 			.col-lg-8{margin-left:15%;margin-right:15%;}
-			.input-group-addon{font-size:16px;}		
+			.input-group-addon{font-size:16px;}
 		</style>
 
 	</head>
@@ -22,10 +22,14 @@
 					<form name="input" action="url.php" class="urls" method="post">
 						<div class="col-lg-8">
 							<div class="input-group">
-								<input type="text" name="url_full" placeholder="http://example.com" class="form-control">
+								<input type="text" name="url_full" placeholder="Enter the URL you want to shorten" class="form-control">
 								<span class="input-group-btn"> <button class="btn btn-default" type="submit">SHORTEN</button></span>
 							</div><!-- /input-group -->
 						</div><!--col-lg-8-->
+						<div class="col-lg-8" sytle="width:50%;">
+									<h3 style="position:absolute;">http://slur.pe</h3>
+									<input type="text" id="url_short" name="url_short" placeholder="Custom-URL" maxlength="20" class="form-control" style="width:60%;margin-left:154px;margin-top:11px;">
+						</div><br><!-- /.col-lg-8 -->
 					</form>
 				</div><!-- form_input -->
 			</div><!--jumbotron -->
