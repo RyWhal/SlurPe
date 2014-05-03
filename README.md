@@ -31,25 +31,25 @@ URL shortening:
 
 How the shortening works...
 
-1) A full URL and short URL come into index.php
+1. A full URL and short URL come into index.php
 
-2) The form data from index.php is posted to URL.php
+2. The form data from index.php is posted to URL.php
 
->a) URL.php checks to see if it is a valid URL format (functions/isValidUrl.php)
+ 1. URL.php checks to see if it is a valid URL format (functions/isValidUrl.php)
         
->b) Inserts the URL, Shortened URL, date/time, submitting IP, wether or not to make public, into the DB
+ 2. Inserts the URL, Shortened URL, date/time, and submitting IP into the DB
         
->d) Spits out either success or failure message to the user, including the shortened URL
+ 3. Spits out either success or failure message to the user, including the shortened URL if success
 
-3) A user submits that URL back into a browser bar (ex. slur.pe/Google)
+3. A user submits that URL back into a browser bar (ex. slur.pe/Google)
 
->a) Apache+.htaccess file take the URL and turn it into a post slur.pe/url_short?=Google
+ 1. Apache+.htaccess file take the URL and turn it into a post slur.pe/url_short?=Google
         
->b) url_302.php takes that post. It checks the DB for "Google" short URL to associate with a long URL
+ 2. url_302.php takes that post. It checks the DB for "Google" short URL to associate with a long URL
         
->c) url_302.php serves a HTTP response code 302 (permenant redirect) and redirects the client to google.com
+ 3. url_302.php serves a HTTP response code 302 (permenant redirect) and redirects the client to google.com
         
->d) wooo its been shortened!
+ 4. Wooo its been shortened!
 
 
 Config
@@ -82,7 +82,6 @@ Create Table: CREATE TABLE `urls` (
   `clicks` int(6) DEFAULT '0',
   `score` int(6) DEFAULT NULL,
   `active` tinyint(1) DEFAULT NULL,
-  `public` tinyint(1) DEFAULT NULL,
   `random` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `url_short` (`url_short`)
