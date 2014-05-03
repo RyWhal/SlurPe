@@ -15,8 +15,8 @@ function error_page($message, $search){
 			</div><!-- /input-group -->
 			</div><!--col-lg-8-->
 			<div class="col-lg-8" sytle="width:50%;">
-			<h3 style="position:absolute;">http://slur.pe</h3>
-			<input type="text" id="url_short" name="url_short" placeholder="Custom-URL" maxlength="20" class="form-control" style="width:60%;margin-left:154px;margin-top:11px;">
+			<h3 class="url">http://slur.pe/</h3>
+			<input type="text" id="url_short" name="url_short" placeholder="Custom-URL" maxlength="20" class="form-control customurl"">
 			</div><br><!-- /.col-lg-8 -->
 			</form>
 			</div><!-- form_input -->

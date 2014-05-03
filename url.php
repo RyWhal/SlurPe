@@ -103,10 +103,11 @@ mysqli_close($mysqli);
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
-		<title>slur.pe</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	<title>slur.pe</title>
 
-		<link href="dist/css/bootstrap.css" rel ="stylesheet">
+	<link href="dist/css/bootstrap.css" rel ="stylesheet">
+	<link href="dist/css/custom.css" rel ="stylesheet">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -126,7 +127,7 @@ mysqli_close($mysqli);
 </div><!--container-->
 
 		<div class="footer_content">Created by Ryan Whalen - 2013</div>
-		<img src="/images/slurpe.png" height="200" width="200" class="slurpe_logo">
+		<img src="/images/slurpe.png" class="slurpe_logo">
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

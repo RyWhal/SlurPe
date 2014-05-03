@@ -6309,36 +6309,6 @@ body.modal-open,
 .visible-xs {
   display: none !important;
 }
-
-.slurpe_footer {
-	position: fixed;
-	z-index: 1030;
-	bottom: 0px;
-	right: 0px;
-	left: 0px;
-	width: 100%;
-	height: 50px;
-	margin-top: 60px;
-	background-color: #222222;
-}
-
-.slurpe_logo {
-	position: absolute;
-	z-index: 5000;
-	bottom: 5px;
-	right: 5px;
-}
-
-.footer_content {
-	color:gray;
-	z-index:1050;
-	width:20%;
-	margin-left:40%;
-	margin-right:40%;
-	padding-top:10px;
-}
-
-
 tr.visible-xs {
   display: none !important;
 }

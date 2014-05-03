@@ -1,0 +1,26 @@
+.slurpe_logo {
+	position: fixed;
+	z-index: 5000;
+	width:200px;
+	height:200px;
+	bottom: 50px;
+	right: 50px;
+}
+h3.url{
+	position:absolute;
+	text-shadow:1.5px 1.5px 1.5px 1.5px black;
+}
+.customurl{
+	width:65%;
+	margin-left:154px;
+	margin-top:11px;
+}
+
+.footer_content {
+	color:gray;
+	z-index:1050;
+	width:20%;
+	margin-left:40%;
+	margin-right:40%;
+	padding-top:10px;
+}
