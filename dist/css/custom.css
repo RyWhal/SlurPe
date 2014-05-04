@@ -11,7 +11,7 @@ h3.url{
 	text-shadow:1.5px 1.5px 1.5px 1.5px black;
 }
 .customurl{
-	width:65%;
+	width:34%;
 	margin-left:154px;
 	margin-top:11px;
 }
@@ -23,4 +23,8 @@ h3.url{
 	margin-left:40%;
 	margin-right:40%;
 	padding-top:10px;
+}
+
+a.backlink{
+	margin-left:15%;
 }

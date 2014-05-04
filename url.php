@@ -70,7 +70,9 @@ if (isValidUrl($url_full)){
 			$result2 = mysqli_query($mysqli,$sql2);
 
 			//message gets picked up below in the html
-			$message= "<br><textarea class='copybox' id='copy_text'>slur.pe/$url_short</textarea><p style='width:70%; margin-left:15%; margin-right:15%;'>Copy the link above into a URL bar to go to $url_full</p>";
+			$message= "<textarea class='copybox' id='copy_text'>slur.pe/$url_short</textarea>
+				<p style='width:70%; margin-left:15%; margin-right:15%;'>Copy the link above into a URL bar to go to $url_full</p>
+				<a href='index.html' class='backlink'><span class='glyphicon glyphicon-backward'></span><span style='font-weight:bold;'> Shorten another</span></a>";
 			$search='false';///improperly named determines if option to enter a new URL comes up
 		}
 
