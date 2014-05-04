@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^([0-9A-Za-z]+)/?$ /url_302.php?url_short=$1 [L]
+ErrorDocument 404 http://slur.pe/404
+ErrorDocument 500 "Something went wrong... :-x"
