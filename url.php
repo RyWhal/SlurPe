@@ -123,7 +123,7 @@ mysqli_close($mysqli);
 </head>
 
 <body style="padding: 30px; background-color:currentcolor">
-	<div class="jumbotron" style="margin-top:15%; border-radius:10px;">
+	<div class="jumbotron" style="margin-top:15%; border-radius:15px;">
 		<?php error_page($message, $search); //generates error page with $message from above and $search from above ?>
 	</div>
 </div><!--container-->
