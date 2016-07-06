@@ -1,26 +1,26 @@
 SlurPe
 ======
 
-A simple URL shortener PHP webapp with a MySQL backend. The website is currently hosted at http://slur.pe.
+A simple URL shortener PHP webapp with a MySQL backend. The website is currently hosted at http://slur.pw.
 
 
 
 
-CLI Slur.pe
+CLI Slur.pw
 ===========
 
-A simple curl with the fields "url_full" and "url_short" pointed at "slur.pe/api/put.php" will submit your link for shortening.
+A simple curl with the fields "url_full" and "url_short" pointed at "slur.pw/api/put.php" will submit your link for shortening.
 ```
-rwhalen-mbp:~ rwhalen$  curl -F "url_full=https://github.com/RyWhal" -F "url_short=github" slur.pe/api/put.php
-Your Short URL: http://slur.pe/github
+rwhalen-mbp:~ rwhalen$  curl -F "url_full=https://github.com/RyWhal" -F "url_short=github" slur.pw/api/put.php
+Your Short URL: http://slur.pw/github
 Copy the link above into a URL bar to go to https://github.com/RyWhal
 rwhalen-mbp:~ rwhalen$
 ```
 
 If you leave off "url_short" a random shortened URL will be generated for you.
 ```
-rwhalen-mbp:~ rwhalen$  curl -F "url_full=https://github.com/RyWhal" slur.pe/api/put.php
-Your Short URL: http://slur.pe/PkbffV
+rwhalen-mbp:~ rwhalen$  curl -F "url_full=https://github.com/RyWhal" slur.pw/api/put.php
+Your Short URL: http://slur.pw/PkbffV
 Copy the link above into a URL bar to go to https://github.com/RyWhal
 rwhalen-mbp:~ rwhalen$
 ```
@@ -41,9 +41,9 @@ How the shortening works...
         
 >d) Spits out either success or failure message to the user, including the shortened URL
 
-3) A user submits that URL back into a browser bar (ex. slur.pe/Google)
+3) A user submits that URL back into a browser bar (ex. slur.pw/Google)
 
->a) Apache+.htaccess file take the URL and turn it into a post slur.pe/url_short?=Google
+>a) Apache+.htaccess file take the URL and turn it into a post slur.pw/url_short?=Google
         
 >b) url_302.php takes that post. It checks the DB for "Google" short URL to associate with a long URL
         
