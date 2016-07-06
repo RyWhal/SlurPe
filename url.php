@@ -70,7 +70,7 @@ if (isValidUrl($url_full)){
 			$result2 = mysqli_query($mysqli,$sql2);
 
 			//message gets picked up below in the html
-			$message= "<textarea class='copybox' id='copy_text'>slur.pe/$url_short</textarea>
+			$message= "<textarea class='copybox' id='copy_text'>slur.pw/$url_short</textarea>
 				<p style='width:70%; margin-left:15%; margin-right:15%;'>Copy the link above into a URL bar to go to $url_full</p>
 				<a href='index.html' class='backlink'><span class='glyphicon glyphicon-backward'></span><span style='font-weight:bold;'> Shorten another</span></a>";
 			$search='false';///improperly named determines if option to enter a new URL comes up
@@ -106,7 +106,7 @@ mysqli_close($mysqli);
 
 <head>
 	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
-	<title>slur.pe</title>
+	<title>slur.pw</title>
 
 	<link href="dist/css/bootstrap.css" rel ="stylesheet">
 	<link href="dist/css/custom.css" rel ="stylesheet">
@@ -123,7 +123,7 @@ mysqli_close($mysqli);
 </head>
 
 <body style="padding: 30px; background-color:currentcolor">
-	<div class="jumbotron" style="margin-top:15%; border-radius:10px;">
+	<div class="jumbotron" style="margin-top:15%; border-radius:15px;">
 		<?php error_page($message, $search); //generates error page with $message from above and $search from above ?>
 	</div>
 </div><!--container-->
