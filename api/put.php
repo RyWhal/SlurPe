@@ -72,7 +72,7 @@ if (isValidUrl($url_full))
 			$sql2="INSERT INTO $table (url_full, url_short, datetime, ip_put, public, random) VALUES ('$url_full', '$url_short', now(), INET_ATON('$IP'), '$searchable', '$random')";
 			$result2 = mysqli_query($mysqli,$sql2);
 			//message gets picked up below in the html
-			echo "Your Short URL: http://slur.pe/$url_short\nCopy the link above into a URL bar to go to $url_full\n";
+			echo "Your Short URL: http://slur.pw/$url_short\nCopy the link above into a URL bar to go to $url_full\n";
 			$search='false';///improperly named determines if option to enter a new URL comes up
 		}
 
