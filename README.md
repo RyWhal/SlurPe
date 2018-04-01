@@ -11,7 +11,7 @@ CLI Slur.pw
 
 A simple curl with the fields "url_full" and "url_short" pointed at "slur.pw/api/put.php" will submit your link for shortening.
 ```
-rwhalen-mbp:~ rwhalen$  curl -F "url_full=https://github.com/RyWhal" -F "url_short=github" slur.pw/api/put.php
+rwhalen-mbp:~ rwhalen$  curl -F "url_full=https://github.com/RyWhal" -F "url_short=github" slur.pw/urlshort/api/put.php
 Your Short URL: http://slur.pw/github
 Copy the link above into a URL bar to go to https://github.com/RyWhal
 rwhalen-mbp:~ rwhalen$
@@ -19,7 +19,7 @@ rwhalen-mbp:~ rwhalen$
 
 If you leave off "url_short" a random shortened URL will be generated for you.
 ```
-rwhalen-mbp:~ rwhalen$  curl -F "url_full=https://github.com/RyWhal" slur.pw/api/put.php
+rwhalen-mbp:~ rwhalen$  curl -F "url_full=https://github.com/RyWhal" slur.pw/urlshort/api/put.php
 Your Short URL: http://slur.pw/PkbffV
 Copy the link above into a URL bar to go to https://github.com/RyWhal
 rwhalen-mbp:~ rwhalen$
