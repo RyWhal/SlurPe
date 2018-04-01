@@ -1,9 +1,15 @@
 SlurPe
 ======
 
-A simple URL shortener PHP webapp with a MySQL backend. The website is currently hosted at http://slur.pw.
+A simple URL shortener PHP webapp with a MySQL backend. The website is currently hosted at http://slur.pw. The site used to be hosted at slur.pe, but I lost the domain. So there may be some remnants of SlurPe.
 
-
+**Disclaimer:** I understand that there is a lot that I could do with this, but I dont have the time to implement:
+- A blacklist of domains
+- Some extra input sanitization 
+- Some extra error handling
+- A "spam" filter
+- Cleaning up some URL paths
+- etc.
 
 
 CLI Slur.pw
@@ -88,3 +94,5 @@ Create Table: CREATE TABLE `urls` (
   UNIQUE KEY `url_short` (`url_short`)
 )
 ```
+
+Score, active, and public aren't in use right now.
