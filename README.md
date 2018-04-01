@@ -9,6 +9,7 @@ A simple URL shortener PHP webapp with a MySQL backend. The website is currently
 - Some extra error handling
 - A "spam" filter
 - Cleaning up some URL paths
+- Better input URL validation
 - etc.
 
 
