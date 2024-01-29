@@ -1,5 +1,6 @@
 SlurPe
 ======
+# SlurPe is NO LONGER ACTIVE. I couldn't afford the domain anymore.
 
 A simple URL shortener PHP webapp with a MySQL backend. The website is currently hosted at http://slur.pw. The site used to be hosted at slur.pe, but I lost the domain. So there may be some remnants of SlurPe.
 
